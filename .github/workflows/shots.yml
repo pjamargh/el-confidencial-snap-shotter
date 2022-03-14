@@ -58,4 +58,5 @@ jobs:
         timestamp=$(date -u)
         git commit -m "${timestamp}" || exit 0
         git pull --rebase
+        git checkout --ours -- shot.png
         git push
